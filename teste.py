@@ -47,3 +47,91 @@
 # else: 
 #     print("Não use óculos de sol")
 
+#         Condições
+# green_account = False
+# criminal_record = False
+
+# if green_account and criminal_record:                     x E y
+#     print('vai pras férias')
+# elif green_account and not criminal_record:               x true E y false
+#     print('ih deu ruim com a tua ficha')
+# elif criminal_record and not green_account:
+#     print('ih deu ruim com o teu dinheiro')
+# elif not criminal_record and not green_account:           x false E y false
+#     print('cara tu tá ferrado')
+
+#         Loop While 
+# i = 0
+
+# while i < 5:
+#     print(i)
+#     i = i + 1
+# print("Acabou")
+
+#     Acerte o número secreto
+
+# secret_number = 3
+# i = 3
+
+# while i > 0:
+#     numero = input("Tente acertar o número secreto, você tem " + str(i) + " tentativas: ")
+#     if int(numero) == secret_number:
+#         i = -2
+#     elif int(numero) < secret_number:
+#         print("O numero digitado é menor que o número secreto.")
+#         i = i - 1
+#     elif int(numero) > secret_number:
+#         print("O numero digitado é maior que o número secreto.")
+#         i = i = 1
+# if i == -2:
+#     print('Parabéns, você conseguiu')
+# elif i == 0:
+#     print("Que pena, você não conseguiu acertar")
+
+
+            # Posso comprar um celular com x reais?
+
+# iphoneXRMaster = 8000
+# iphoneXRDiamond = 5000
+# positivo = 450
+
+# celular1 = 'iPhone XR Master'
+# celular2 = 'iPhone XR Diamond'
+# celular3 = 'Positivo azul'
+
+# dinheiro = input('Quanta grana você tem pra descolar um celular novo? ')
+# if int(dinheiro) >= iphoneXRMaster:
+#         print('Você tem disponíveis pra comprar: ' + celular1 + ', ' + celular2 + ', e ' + celular3)
+# elif int(dinheiro) < iphoneXRMaster and int(dinheiro) >= iphoneXRDiamond:
+#         print('Você tem disponíveis pra comprar: ' + celular2 + ', e ' + celular3)
+# elif int(dinheiro) < iphoneXRMaster and int(dinheiro) >= positivo:
+#         print('Você tem disponível pra comprar: ' + celular3)
+# else:
+#         print('Puts que pena, não existe nenhum celular disponível para você comprar no momento')
+
+nomes = [1, 2, 3, 3, 4, 5, 6, 7]
+# print(nomes[1:3])
+
+# nomes.append(20)        #Adiciona 20 ao final da lista
+# print(nomes)
+# nomes.insert(0, 99)     #Adiciona 99 no índice 0
+# print(nomes)
+# nomes.remove(3)         #Remove o item de valor 3 na lista
+# print(nomes)
+# nomes.pop()             #Remove o último item da lista
+# print(nomes)
+# print(nomes.index(4))   #Verifica em que índice o item está na lista
+
+# print(nomes.count(7))   #Conta quantos itens com esse valor existem na lista
+
+# lista2 = nomes.copy()   #Faz uma cópia da lista especificada
+# print(lista2)
+# nomes.clear()           #Limpa a lista
+# print(nomes)
+
+nomes2 = nomes.copy()
+
+nomes2.remove(3)
+
+print(nomes)
+print(nomes2)
